@@ -1244,3 +1244,455 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 802.354282 seconds.
+  path: Assets/ProjectLittleAdventurer/Settings/CubemapGameScene.cubemap
+  artifactKey: Guid(80876c7d0124e6743a8341e14c5cfe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Settings/CubemapGameScene.cubemap using Guid(80876c7d0124e6743a8341e14c5cfe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87e20aef52352bc82f8f0f735a124dc') in 0.520628 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.032530 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3297ms)
+		BeginReloadAssembly (277ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (74ms)
+		EndReloadAssembly (2792ms)
+			LoadAssemblies (206ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (778ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (200ms)
+			SetupLoadedEditorAssemblies (1293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (65ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (269ms)
+				ProcessInitializeOnLoadAttributes (716ms)
+				ProcessInitializeOnLoadMethodAttributes (217ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (74ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5761 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (1.6 MB). Loaded Objects now: 6824.
+Memory consumption went from 234.9 MB to 233.4 MB.
+Total: 6.977800 ms (FindLiveObjects: 0.675700 ms CreateObjectMapping: 0.441700 ms MarkObjects: 4.743500 ms  DeleteObjects: 1.113800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 454.538322 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/MainMenu/Meshes/Characters_MainMenu.fbx
+  artifactKey: Guid(95970c1a3b6ae1d46b99263ed8807ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/MainMenu/Meshes/Characters_MainMenu.fbx using Guid(95970c1a3b6ae1d46b99263ed8807ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894cbd05133482bfb78d270e7228a826') in 4.312670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_45_low.fbx
+  artifactKey: Guid(0ee525e3c4b409041a279a3f68a02866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_45_low.fbx using Guid(0ee525e3c4b409041a279a3f68a02866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ec4189de3e2556dafd33897907920d') in 0.080769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_side.fbx
+  artifactKey: Guid(087ce99a6d381404f9806943970886cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_side.fbx using Guid(087ce99a6d381404f9806943970886cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea422323f4f697cf04265bf15cb644d3') in 0.078113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Rock_small_03.mat
+  artifactKey: Guid(d2e3c5ced59b34449b177b27504d9029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Rock_small_03.mat using Guid(d2e3c5ced59b34449b177b27504d9029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269fed1fcdb40ad23c9703ab003b32cb') in 0.058580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Rock_small_02.fbx
+  artifactKey: Guid(3232fe2f8f1faa845a777a7908d1869e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Rock_small_02.fbx using Guid(3232fe2f8f1faa845a777a7908d1869e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb572cfd075d4762ec827bcaa9e639b') in 0.056840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Wall_4x0.6x2.5_low.mat
+  artifactKey: Guid(d809c1ab5f9e5f349925ca531f4c5860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Wall_4x0.6x2.5_low.mat using Guid(d809c1ab5f9e5f349925ca531f4c5860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81c45a200790eeec788d01bffc5e4f4') in 0.059651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp Short.mat
+  artifactKey: Guid(cc052bbfb0d74a444a1dca45ab67eaf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp Short.mat using Guid(cc052bbfb0d74a444a1dca45ab67eaf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224d5e237128870af69019ea4492b037') in 0.101024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp.mat
+  artifactKey: Guid(613d948d5b11f12489325eae798f693a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp.mat using Guid(613d948d5b11f12489325eae798f693a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c830b35e172ca5cd77f4d11a8d1658bd') in 0.055720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_4_low_C.fbx
+  artifactKey: Guid(f5275894dd89e0148ac301ef5d59aa3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_4_low_C.fbx using Guid(f5275894dd89e0148ac301ef5d59aa3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd169a7eec190c52fe19e7d7262a0f901') in 0.059104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_45_low.mat
+  artifactKey: Guid(5ee9fcc8ff6fd7843bf7834cb0975e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_45_low.mat using Guid(5ee9fcc8ff6fd7843bf7834cb0975e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8109a30382e56417e89bc14a2d5942ff') in 0.063273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_Mid_high.fbx
+  artifactKey: Guid(cd51abab3d12146458545f56c45f3c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_Mid_high.fbx using Guid(cd51abab3d12146458545f56c45f3c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23720089639d7700918992f78489a9fb') in 0.070667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_35_low.mat
+  artifactKey: Guid(bf1ee0591eb3c724792b8c14b476e26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_35_low.mat using Guid(bf1ee0591eb3c724792b8c14b476e26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd04522d6b422eb9eb4dc884214410e') in 0.062061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Leave.fbx
+  artifactKey: Guid(20f07ace012e5ac4eb215cf8830844f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Leave.fbx using Guid(20f07ace012e5ac4eb215cf8830844f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262ec5121ee4a7ba1860704647409e65') in 0.044205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_4_low.fbx
+  artifactKey: Guid(c756e284df3ed4e4aa56ba849ddb4fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_4_low.fbx using Guid(c756e284df3ed4e4aa56ba849ddb4fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c2939ad87da562edbb5ca6dbd1af32') in 0.055120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Tree_leaves.fbx
+  artifactKey: Guid(20a5a1fd744b0a9448ce6cfabb435194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Tree_leaves.fbx using Guid(20a5a1fd744b0a9448ce6cfabb435194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08ab6f3f2aacf0aa92810dd63c89928') in 0.072458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Gate_wide.fbx
+  artifactKey: Guid(420f4c72213af9d4a8f16e3c3cd0ab56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Gate_wide.fbx using Guid(420f4c72213af9d4a8f16e3c3cd0ab56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b0b1a91db7a7ca22f53186c8cb254c') in 0.051363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Base.fbx
+  artifactKey: Guid(1053457cb95f66343bce946d02ffb2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Base.fbx using Guid(1053457cb95f66343bce946d02ffb2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3ba20d292a555072ccd30fca3c65e1') in 0.106345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Rock_small_03.fbx
+  artifactKey: Guid(a1052a6d33787164382a8c2eb09280df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Rock_small_03.fbx using Guid(a1052a6d33787164382a8c2eb09280df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f463e24243f84138663d58e1c0016b7') in 0.105006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_25_2_low_C.fbx
+  artifactKey: Guid(260569299a3b4514f940c8421f0854bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_25_2_low_C.fbx using Guid(260569299a3b4514f940c8421f0854bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982e4afd92da8d237225827f411e6fab') in 0.050619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_short_Handle_low.fbx
+  artifactKey: Guid(623e7b40ab0e8b64fa6f40f5c22e22e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_short_Handle_low.fbx using Guid(623e7b40ab0e8b64fa6f40f5c22e22e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987ef362abb0fb3f4d8c52ad1847e0b2') in 0.065308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/PillarLamp_02.fbx
+  artifactKey: Guid(3f82ced9a61b549498fada33ae8c9c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/PillarLamp_02.fbx using Guid(3f82ced9a61b549498fada33ae8c9c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226e9fd66e231e9bc8bda372a28be548') in 0.065379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_handles_low.fbx
+  artifactKey: Guid(9a669e59d76bf5b479847ec2221f0ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_handles_low.fbx using Guid(9a669e59d76bf5b479847ec2221f0ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b810b1fb21948106388239a0169cd8ec') in 0.106502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_35_low_C.fbx
+  artifactKey: Guid(09cb945ead4e6ab488215faa57271e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_35_low_C.fbx using Guid(09cb945ead4e6ab488215faa57271e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de282b4ec74cb8a97c1ffedb6d23026') in 0.053016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_short_side.fbx
+  artifactKey: Guid(ac43469eebd86844bb45e36617e7c9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_short_side.fbx using Guid(ac43469eebd86844bb45e36617e7c9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0c9287c991df3fb508383589051404') in 0.108614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Base.mat
+  artifactKey: Guid(e89c496ce97d6cc4993e74be160ead13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Base.mat using Guid(e89c496ce97d6cc4993e74be160ead13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876e15cab4b875c9e34641a92ff3d8ba') in 0.085672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Tree_leaves.mat
+  artifactKey: Guid(1cf1d47e0140269479a380eb019e1838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Tree_leaves.mat using Guid(1cf1d47e0140269479a380eb019e1838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d7647a9dd7842a377b9f907d7a78b5') in 0.051477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_45_low_C.fbx
+  artifactKey: Guid(64af920fdd1e9a144b0c9490f93e0146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_45_low_C.fbx using Guid(64af920fdd1e9a144b0c9490f93e0146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f893f992b235ae0d9fa0b1b0625c5b3') in 0.070328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_low_C.fbx
+  artifactKey: Guid(4c4178582cfe51c4186862c341655f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Stairs_high_low_C.fbx using Guid(4c4178582cfe51c4186862c341655f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394ed1edcc6ced1109dc0b25afff1671') in 0.079122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Stairs_Short.mat
+  artifactKey: Guid(f00c42e8b2841734a933aa08beebb73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Stairs_Short.mat using Guid(f00c42e8b2841734a933aa08beebb73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9045df04a1cf1281ce10fa422c98872') in 0.053448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_4_low.mat
+  artifactKey: Guid(6b4c9b3a4c2b9ad42afcabe45d39cd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/pillar_4_low.mat using Guid(6b4c9b3a4c2b9ad42afcabe45d39cd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd06563e3f9dfcb955515e2affbd64e') in 0.096693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Coin.mat
+  artifactKey: Guid(6d5ad02d326cc28499888da1416ae629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Coin.mat using Guid(6d5ad02d326cc28499888da1416ae629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf99bb6b364a0d830e0d2b60f8671baa') in 3.501208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp MainMenu.mat
+  artifactKey: Guid(e2b827ff017a9a446a9de9c82de7b7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/PillarLamp MainMenu.mat using Guid(e2b827ff017a9a446a9de9c82de7b7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6506fca3918450e51147c4bef11773') in 0.060382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Stairs_high_handles_low.mat
+  artifactKey: Guid(6f8de9bbd6f9f6244be0a04c4801a6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Stairs_high_handles_low.mat using Guid(6f8de9bbd6f9f6244be0a04c4801a6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2abe94ef3e56e5a6e3f128d53717cf81') in 0.088682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_35_low.fbx
+  artifactKey: Guid(496d7461f8afb2640a10b50e44cbcbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/pillar_35_low.fbx using Guid(496d7461f8afb2640a10b50e44cbcbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813a0c606ca012d58761a430612f47ce') in 0.066818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Wall.mat
+  artifactKey: Guid(b6004e19d6ce44846a129cc71bba062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Wall.mat using Guid(b6004e19d6ce44846a129cc71bba062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89498c4031d4653210e1e7efc17bedf') in 0.075308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Floor_low_C.fbx
+  artifactKey: Guid(25b79dcb65a39e94dbe9131a800e31bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Floor_low_C.fbx using Guid(25b79dcb65a39e94dbe9131a800e31bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea3881435b76b69a5e0e7fa3a789b90') in 0.062300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Leaves.mat
+  artifactKey: Guid(5f0aa9a6a3078de4ba5a322667049f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Leaves.mat using Guid(5f0aa9a6a3078de4ba5a322667049f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd799905769f19dffa4181bd8615aa6cc') in 0.053090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Tree_trunk.mat
+  artifactKey: Guid(2dccb80b00bf0734b9eb2a726a4a70c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Material/Tree_trunk.mat using Guid(2dccb80b00bf0734b9eb2a726a4a70c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b26461a33610f98c656d1a4ed46bfa1') in 0.046726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_mid_low_C.fbx
+  artifactKey: Guid(a81ab59d75634674aaf326f7d9c11701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_mid_low_C.fbx using Guid(a81ab59d75634674aaf326f7d9c11701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e8ede6c7da48fe1c3d3f0780c7bc6c') in 0.059801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_Side_low_C.fbx
+  artifactKey: Guid(c8c0369baeb50684488be82d8d5736ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Mesh/Arc_Side_low_C.fbx using Guid(c8c0369baeb50684488be82d8d5736ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef2ef32b7542437fef3796303a40104') in 0.061071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.011017 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Arc_Mid_low.prefab
+  artifactKey: Guid(3bf76c66768e40e48a6727b41600e1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Arc_Mid_low.prefab using Guid(3bf76c66768e40e48a6727b41600e1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478915992a3a1d72ea8c26afeb7087e7') in 0.046258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Coin.prefab
+  artifactKey: Guid(a23a6ca5f2876b347a042d6e8b16ed7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Coin.prefab using Guid(a23a6ca5f2876b347a042d6e8b16ed7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c20f876a522e7ee0da9c8ea9980c76a') in 0.035575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_45_low.prefab
+  artifactKey: Guid(af9d99f33671df8499f858ddbbd1f3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_45_low.prefab using Guid(af9d99f33671df8499f858ddbbd1f3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89b036104456be2015cbb1e47cc04b9') in 0.050443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Rock_Small_01.prefab
+  artifactKey: Guid(fa4576f4ba403984e862b7fbb7996380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Rock_Small_01.prefab using Guid(fa4576f4ba403984e862b7fbb7996380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bcf52db49c99aea994f44618a1a0eb') in 0.061621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_4x0.6x4_low.prefab
+  artifactKey: Guid(7def434c998a0bb4aa9411efbfd8ea53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_4x0.6x4_low.prefab using Guid(7def434c998a0bb4aa9411efbfd8ea53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65975f62ae830c73085db26e837c8b7') in 0.060616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/PillarLamp_02.prefab
+  artifactKey: Guid(dd93a14b70bed23409bacb31ab8fd392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/PillarLamp_02.prefab using Guid(dd93a14b70bed23409bacb31ab8fd392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250c907f5954c48682d8b06efc096f23') in 0.077369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/State_01.prefab
+  artifactKey: Guid(b5ec69344320b7247bc1ba504ca5fc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/State_01.prefab using Guid(b5ec69344320b7247bc1ba504ca5fc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7910766986acd85721ab9460c07854') in 0.143477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_25_low.prefab
+  artifactKey: Guid(e0fd94f039d01f84ca56941d0c7ed8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_25_low.prefab using Guid(e0fd94f039d01f84ca56941d0c7ed8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f26ee646e8195c74df66c2e5a498a0') in 0.061576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/PillarLamp.prefab
+  artifactKey: Guid(f86bcbbdb9d00b148ab8e7c03787de8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/PillarLamp.prefab using Guid(f86bcbbdb9d00b148ab8e7c03787de8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abafa82e9a2c4f6d8a60bc7401a4a901') in 0.051080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_4x0.6x1.5.prefab
+  artifactKey: Guid(68304a851d7883a438cbf8e6aecd61a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_4x0.6x1.5.prefab using Guid(68304a851d7883a438cbf8e6aecd61a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c8616dbb7f300943dfaf0eafe763bf') in 0.079417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Rock_01_low.prefab
+  artifactKey: Guid(f67b6ba30daee3c47a60e22682018983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Rock_01_low.prefab using Guid(f67b6ba30daee3c47a60e22682018983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb2999c5f51df1b7b4efe0a6d8cdc151') in 0.064353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Leave 02.prefab
+  artifactKey: Guid(2a374258bc4f5c7478278ba758d8e761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Leave 02.prefab using Guid(2a374258bc4f5c7478278ba758d8e761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b97c66b7498ce000c5f6edeb80cf04') in 0.051982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_35_low.prefab
+  artifactKey: Guid(1f0ae7ccd781e0848aa3e5c445c0af9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/pillar_35_low.prefab using Guid(1f0ae7ccd781e0848aa3e5c445c0af9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b231f9d4ff0dec632fc16f93400feb9e') in 0.067454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_2x0.6x4_low.prefab
+  artifactKey: Guid(9c516ed5087014e479a7bdc66b38edd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Prefab/Wall_2x0.6x4_low.prefab using Guid(9c516ed5087014e479a7bdc66b38edd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c2672f57101a039debe5db95b11fba') in 0.085754 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021982 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.662 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3664ms)
+		BeginReloadAssembly (400ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (112ms)
+		EndReloadAssembly (2994ms)
+			LoadAssemblies (299ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (870ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (210ms)
+			SetupLoadedEditorAssemblies (1339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (68ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (277ms)
+				ProcessInitializeOnLoadAttributes (729ms)
+				ProcessInitializeOnLoadMethodAttributes (234ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (79ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5761 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (1.6 MB). Loaded Objects now: 6881.
+Memory consumption went from 235.1 MB to 233.6 MB.
+Total: 15.652600 ms (FindLiveObjects: 1.487600 ms CreateObjectMapping: 1.073100 ms MarkObjects: 11.904400 ms  DeleteObjects: 1.183000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
