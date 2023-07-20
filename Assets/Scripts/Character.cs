@@ -23,6 +23,9 @@ public class Character : MonoBehaviour
         Attacking
     }
     public CharacterState CurrentState;
+    private float attackStartTime; //player slide while attack
+    public float AttackSlideDuration = 0.35f;
+    public float AttackSlideSpeed = 0.07f;
 
     private void Awake() {
         _cc = GetComponent<CharacterController>();
@@ -69,6 +72,7 @@ public class Character : MonoBehaviour
         }else{
             _navMeshAgent.SetDestination(transform.position);
            _animator.SetFloat("Speed",0f);
+           SwitchStateTo(CharacterState.Attacking);
         }
 
     }
@@ -82,7 +86,17 @@ public class Character : MonoBehaviour
                 else
                     CalculateEnemyMovement();
                 break;
+
             case CharacterState.Attacking:
+
+                if(IsPlayer){
+                    _movementVelocity = Vector3.zero;
+                    if(Time.time < attackStartTime + AttackSlideDuration){
+                        float timePassed = Time.time - attackStartTime;
+                        float lerpTime = timePassed / AttackSlideDuration;
+                        _movementVelocity=Vector3.Lerp(transform.forward * AttackSlideSpeed, Vector3.zero, lerpTime);
+                    }
+                }
                 break;
         }
 
@@ -101,8 +115,10 @@ public class Character : MonoBehaviour
     }
 
     private void SwitchStateTo(CharacterState newState){
+        if(IsPlayer){
         //clear cache
-        _playerinput.MouseButtonDown=false;
+            _playerinput.MouseButtonDown=false;
+        }
 
         //prepare for exisitng 
         switch(CurrentState){
@@ -117,12 +133,20 @@ public class Character : MonoBehaviour
             case CharacterState.Normal:
                 break;
             case CharacterState.Attacking:
-            _animator.SetTrigger("Attack");
+                if(!IsPlayer){
+                    Quaternion newRotation = Quaternion.LookRotation((TargetPlayer.position - transform.position).normalized);
+                    transform.rotation = Quaternion.Slerp(transform.rotation , newRotation, 1f);
+                    //transform.rotation = newRotation;
+                }
+                _animator.SetTrigger("Attack");
+
+                if(IsPlayer){
+                    attackStartTime = Time.time;
+                }
                 break;
         }
 
         CurrentState = newState;
-        Debug.Log(CurrentState);
     }
 
     public void AttackAnimationEnds(){

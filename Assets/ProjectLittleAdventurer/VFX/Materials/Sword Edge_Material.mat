@@ -59,6 +59,8 @@ Material:
     - Strength: 15.63
     - Stretch: 0.2
     - TextureScale: 8.43
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Edge_Color: {r: 0.5849056, g: 0.2088594, b: 0.08552865, a: 1}
     - Remap_in: {r: 0, g: 1, b: 0, a: 0}

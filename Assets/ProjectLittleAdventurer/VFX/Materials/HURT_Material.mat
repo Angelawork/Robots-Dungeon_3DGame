@@ -42,6 +42,8 @@ Material:
     - Displacement: 0.1
     - NoiseScale: 15
     - NoiseStrength: 3.5
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - POSITION: {r: 1, g: 1, b: 0, a: 0}
     - Remap: {r: -1.68, g: 1.77, b: 0, a: 0}
