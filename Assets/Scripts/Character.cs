@@ -12,6 +12,9 @@ public class Character : MonoBehaviour
     public float Gravity = -9.8f;
     private Animator _animator;
 
+    //health
+    private Health _health; 
+
     //Enemy
     public bool IsPlayer = true;
     private UnityEngine.AI.NavMeshAgent _navMeshAgent;
@@ -30,6 +33,7 @@ public class Character : MonoBehaviour
     private void Awake() {
         _cc = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
+        _health = GetComponent<Health>();
 
         if(!IsPlayer){
             _navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -151,5 +155,11 @@ public class Character : MonoBehaviour
 
     public void AttackAnimationEnds(){
         SwitchStateTo(CharacterState.Normal);
+    }
+
+    public void ApplyDamage(int Damage, Vector3 attackPos = new Vector3()){
+        if(_health!=null){
+            _health.ApplyDamage(Damage);
+        }
     }
 }
