@@ -117,10 +117,15 @@ public class Character : MonoBehaviour
             case CharacterState.Normal:
                 break;
             case CharacterState.Attacking:
+            _animator.SetTrigger("Attack");
                 break;
         }
 
         CurrentState = newState;
         Debug.Log(CurrentState);
+    }
+
+    public void AttackAnimationEnds(){
+        SwitchStateTo(CharacterState.Normal);
     }
 }

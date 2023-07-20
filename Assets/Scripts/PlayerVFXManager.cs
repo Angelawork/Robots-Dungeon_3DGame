@@ -7,6 +7,7 @@ public class PlayerVFXManager : MonoBehaviour
 {
     public VisualEffect footstep;
     public VisualEffect walkstep;
+    public ParticleSystem Blade01;
 
     public void Update_FootStep(bool state){
         if(state){
@@ -22,6 +23,10 @@ public class PlayerVFXManager : MonoBehaviour
         }else{
             walkstep.Stop();
         }
+    }
+
+    public void PlayBlade01(){
+        Blade01.Play();
     }
 }
     
