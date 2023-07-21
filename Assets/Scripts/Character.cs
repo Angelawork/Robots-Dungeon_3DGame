@@ -34,9 +34,15 @@ public class Character : MonoBehaviour
         Attacking,
         Dead,
         BeingHit,
-        Slide
+        Slide,
+        Spawn
     }
     public CharacterState CurrentState;
+
+
+    //spawn
+    public float SpawnDuration = 2.2f;
+    private float currentSpawnTime;
 
     //player slide while attack
     private float attackStartTime; 
@@ -69,6 +75,8 @@ public class Character : MonoBehaviour
             _navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
             TargetPlayer = GameObject.FindWithTag("Player").transform;
             _navMeshAgent.speed = MoveSpeed;
+
+            SwitchStateTo(CharacterState.Spawn);
         }else{
             _playerinput = GetComponent<PlayerInput>();
         }
@@ -159,6 +167,13 @@ public class Character : MonoBehaviour
             case CharacterState.Slide:
                 _movementVelocity = transform.forward * SlideSpeed * Time.deltaTime;
                 break;
+
+            case CharacterState.Spawn:
+                currentSpawnTime -= Time.deltaTime;
+                if(currentSpawnTime<=0){
+                    SwitchStateTo(CharacterState.Normal);
+                }
+                break;
         }
 
 
@@ -201,6 +216,9 @@ public class Character : MonoBehaviour
                 break;
             case CharacterState.Slide:
                 break;
+            case CharacterState.Spawn:
+                IsInvincible = false;
+                break;
         }
 
         //entering new state
@@ -234,6 +252,11 @@ public class Character : MonoBehaviour
                 break;
             case CharacterState.Slide:
                 _animator.SetTrigger("Slide");
+                break;
+            case CharacterState.Spawn:
+                IsInvincible = true;
+                currentSpawnTime = SpawnDuration;
+                StartCoroutine(MaterialAppear());
                 break;
         }
 
@@ -355,5 +378,27 @@ public class Character : MonoBehaviour
     }
     private void AddCoin(int value){
         Coin+=value;
+    }
+
+    IEnumerator MaterialAppear(){
+        float dissolveTimeDuration = SpawnDuration;
+        float currentTime = 0;
+        float height_start = -10f;
+        float height_target = 20f;
+        float current_height;
+
+        _materialPropertyBlock.SetFloat("_enableDissolve", 1f);//means set enabled, turn it on
+        _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+
+        while(currentTime < dissolveTimeDuration){
+            currentTime += Time.deltaTime;
+            current_height = Mathf.Lerp(height_start, height_target, currentTime/dissolveTimeDuration);
+            _materialPropertyBlock.SetFloat("_dissolve_height", current_height);
+            _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+            yield return null;//wait for 1 frame untill next loop
+        }
+
+        _materialPropertyBlock.SetFloat("_enableDissolve", 0f);
+        _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
     }
 }
