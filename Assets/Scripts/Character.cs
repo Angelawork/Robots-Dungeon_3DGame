@@ -93,7 +93,9 @@ public class Character : MonoBehaviour
 
         _movementVelocity.Set(_playerinput.HorizontalInput, 0f, _playerinput.VerticalInput);
         _movementVelocity.Normalize();
-        _movementVelocity = Quaternion.Euler(0,-45f,0) * _movementVelocity;
+
+        //for camera perspective
+        //_movementVelocity = Quaternion.Euler(0,-45f,0) * _movementVelocity;
 
         if(Input.GetKey(KeyCode.LeftShift)){
             _animator.SetFloat("Speed",_movementVelocity.magnitude*5);
@@ -241,6 +243,13 @@ public class Character : MonoBehaviour
                 _cc.enabled = false;
                 _animator.SetTrigger("Dead");
                 StartCoroutine(MaterialDissolve());
+
+                Transform childTransform = transform.Find("Lights");
+                if (childTransform != null)
+                {
+                    Destroy(childTransform.gameObject);
+                }
+                
                 break;
             case CharacterState.BeingHit:
                 _animator.SetTrigger("BeingHit");

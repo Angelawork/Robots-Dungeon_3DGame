@@ -213,6 +213,7 @@ MonoBehaviour:
   Coin: 0
   IsPlayer: 0
   CurrentState: 0
+  SpawnDuration: 2.2
   AttackSlideDuration: 0.35
   AttackSlideSpeed: 0.07
   IsInvincible: 0
@@ -336,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1787608212648081923, guid: 8a9b82aa6be433a4b9f51887ec80469f, type: 3}
       propertyPath: m_Name
-      value: Enemy Lights
+      value: Lights
       objectReference: {fileID: 0}
     - target: {fileID: 1787608212648081923, guid: 8a9b82aa6be433a4b9f51887ec80469f, type: 3}
       propertyPath: m_IsActive
