@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
     private float _verticalVelocity;
     public float Gravity = -9.8f;
     private Animator _animator;
+    public GameObject ItemToDrop;
 
     //health
     private Health _health;
@@ -26,18 +27,28 @@ public class Character : MonoBehaviour
     //State machine
     public enum CharacterState{
         Normal, 
-        Attacking
+        Attacking,
+        Dead
     }
     public CharacterState CurrentState;
     private float attackStartTime; //player slide while attack
     public float AttackSlideDuration = 0.35f;
     public float AttackSlideSpeed = 0.07f;
 
+    //material blink
+    private MaterialPropertyBlock _materialPropertyBlock;
+    private SkinnedMeshRenderer _skinnedMeshRenderer;
+
+
     private void Awake() {
         _cc = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _damageCaster = GetComponentInChildren<DamageCaster>();
+
+        _skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        _materialPropertyBlock = new MaterialPropertyBlock();
+        _skinnedMeshRenderer.GetPropertyBlock(_materialPropertyBlock);
 
         if(!IsPlayer){
             _navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -106,6 +117,8 @@ public class Character : MonoBehaviour
                     }
                 }
                 break;
+            case CharacterState.Dead:
+                return;
         }
 
 
@@ -122,7 +135,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void SwitchStateTo(CharacterState newState){
+    public void SwitchStateTo(CharacterState newState){
         if(IsPlayer){
         //clear cache
             _playerinput.MouseButtonDown=false;
@@ -138,6 +151,8 @@ public class Character : MonoBehaviour
                     DisableDamageCaster();
                 }
                 break;
+            case CharacterState.Dead:
+                return;
         }
 
         //entering new state
@@ -156,6 +171,11 @@ public class Character : MonoBehaviour
                     attackStartTime = Time.time;
                 }
                 break;
+            case CharacterState.Dead:
+                _cc.enabled = false;
+                _animator.SetTrigger("Dead");
+                StartCoroutine(MaterialDissolve());
+                break;
         }
 
         CurrentState = newState;
@@ -173,6 +193,8 @@ public class Character : MonoBehaviour
         if(!IsPlayer){
             GetComponent<EnemyVFXManager>().PlayBeingHitVFX(attackPos);
         }
+
+        StartCoroutine(MaterialBlink());
     }
 
     public void EnableDamageCaster(){
@@ -180,5 +202,44 @@ public class Character : MonoBehaviour
     }
     public void DisableDamageCaster(){
         _damageCaster.DisableDamageCaster();
+    }
+
+    IEnumerator MaterialBlink(){
+        _materialPropertyBlock.SetFloat("_blink", 0.28f);
+        _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+
+        yield return new WaitForSeconds(0.2f);
+        _materialPropertyBlock.SetFloat("_blink", 0f);
+        _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+
+    }
+
+    IEnumerator MaterialDissolve(){
+        yield return new WaitForSeconds(2.1f);
+
+        float dissolveTimeDuration = 1.7f;
+        float currentTime = 0;
+        float height_start = 20f;
+        float height_target = -10f;
+        float current_height;
+
+        _materialPropertyBlock.SetFloat("_enableDissolve", 1f);
+        _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+
+        while(currentTime < dissolveTimeDuration){
+            currentTime += Time.deltaTime;
+            current_height = Mathf.Lerp(height_start, height_target, currentTime/dissolveTimeDuration);
+            _materialPropertyBlock.SetFloat("_dissolve_height", current_height);
+            _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+            yield return null;
+        }
+
+        DropItem();
+    }
+
+    public void DropItem(){
+        if(ItemToDrop !=null){
+            Instantiate(ItemToDrop,transform.position, Quaternion.identity);
+        }
     }
 }

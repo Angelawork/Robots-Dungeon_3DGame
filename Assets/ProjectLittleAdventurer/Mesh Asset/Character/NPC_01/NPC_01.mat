@@ -159,7 +159,7 @@ Material:
     - _dissolve_height: 30
     - _enableDissolve: 0
     m_Colors:
-    - Blink_Color: {r: 1, g: 1, b: 1, a: 1}
+    - Blink_Color: {r: 0.5107026, g: 0.30615875, b: 0.9433962, a: 1}
     - DissolveEdgeColor: {r: 29.85706, g: 0, b: 0, a: 0}
     - Edge_Color: {r: 29.85706, g: 0, b: 0, a: 0}
     - Emssion_Color: {r: 1012.0572, g: 0, b: 0, a: 1}
