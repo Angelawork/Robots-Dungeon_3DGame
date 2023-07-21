@@ -13,6 +13,8 @@ public class Character : MonoBehaviour
     private Animator _animator;
     public GameObject ItemToDrop;
 
+    public float SlideSpeed = 10f;
+
     public int Coin;
 
     //health
@@ -31,7 +33,8 @@ public class Character : MonoBehaviour
         Normal, 
         Attacking,
         Dead,
-        BeingHit
+        BeingHit,
+        Slide
     }
     public CharacterState CurrentState;
 
@@ -74,6 +77,9 @@ public class Character : MonoBehaviour
     private void CalculatePlayerMovement(){
         if(_playerinput.MouseButtonDown && _cc.isGrounded){
             SwitchStateTo(CharacterState.Attacking);
+            return;
+        }else if(_playerinput.SpaceKeyDown && _cc.isGrounded){
+            SwitchStateTo(CharacterState.Slide);
             return;
         }
 
@@ -149,6 +155,10 @@ public class Character : MonoBehaviour
                 }
                 ImpactOnCharacter = Vector3.Lerp(ImpactOnCharacter, Vector3.zero, Time.deltaTime*5);
                 break;
+
+            case CharacterState.Slide:
+                _movementVelocity = transform.forward * SlideSpeed * Time.deltaTime;
+                break;
         }
 
 
@@ -168,8 +178,7 @@ public class Character : MonoBehaviour
 
     public void SwitchStateTo(CharacterState newState){
         if(IsPlayer){
-        //clear cache
-            _playerinput.MouseButtonDown=false;
+            _playerinput.clearCache();
         }
 
         //prepare for exisitng 
@@ -189,6 +198,8 @@ public class Character : MonoBehaviour
             case CharacterState.Dead:
                 return;
             case CharacterState.BeingHit:
+                break;
+            case CharacterState.Slide:
                 break;
         }
 
@@ -221,6 +232,9 @@ public class Character : MonoBehaviour
                     StartCoroutine(DelayCancelInvincible());
                 }
                 break;
+            case CharacterState.Slide:
+                _animator.SetTrigger("Slide");
+                break;
         }
 
         CurrentState = newState;
@@ -231,6 +245,10 @@ public class Character : MonoBehaviour
     }
 
     public void BeingHitAnimationEnds(){
+        SwitchStateTo(CharacterState.Normal);
+    }
+
+    public void SlideAnimationEnds(){
         SwitchStateTo(CharacterState.Normal);
     }
 
