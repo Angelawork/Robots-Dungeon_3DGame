@@ -501,6 +501,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1787608212648081922, guid: 8a9b82aa6be433a4b9f51887ec80469f, type: 3}
   m_PrefabInstance: {fileID: 273970113}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &341079694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 36d5e239ddf1c5843979b26c82f9ad52, type: 3}
+  m_PrefabInstance: {fileID: 11245009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &358404594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6821645571046104110, guid: 468d9c46b67464e47bdc80e8f9103914, type: 3}
@@ -565,6 +570,8 @@ GameObject:
   - component: {fileID: 372239726}
   - component: {fileID: 372239730}
   - component: {fileID: 372239729}
+  - component: {fileID: 372239731}
+  - component: {fileID: 372239732}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -604,6 +611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 6
   Gravity: -20
+  ItemToDrop: {fileID: 0}
   IsPlayer: 1
   CurrentState: 0
   AttackSlideDuration: 0.34
@@ -677,6 +685,35 @@ MonoBehaviour:
   walkstep: {fileID: 839203397}
   Slash: {fileID: 1863788968}
   Blade01: {fileID: 932691806}
+--- !u!114 &372239731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372239724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5a1e9f156430d4b8029a8f42cc66b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  CurrentHealth: 0
+--- !u!114 &372239732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372239724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd15ee0d94b1564791448e882c04778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapons:
+  - {fileID: 341079694}
+  - {fileID: 1513414259}
 --- !u!1 &387184533 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6821645572360023734, guid: 468d9c46b67464e47bdc80e8f9103914, type: 3}
@@ -1267,6 +1304,66 @@ VisualEffect:
   m_CorrespondingSourceObject: {fileID: 4236506809640356393, guid: 629ae7cd5191ab5448a826a6fa4d0923, type: 3}
   m_PrefabInstance: {fileID: 965595097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &876452403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876452404}
+  - component: {fileID: 876452406}
+  - component: {fileID: 876452405}
+  m_Layer: 0
+  m_Name: DamageCaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876452404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876452403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1650392022}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876452405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876452403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370f231689d928047bc1908fc43621cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 45
+  TargetTag: Player
+--- !u!65 &876452406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876452403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.92, y: 1.16, z: 2.33}
+  m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &891965883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6821645571741701709, guid: 468d9c46b67464e47bdc80e8f9103914, type: 3}
@@ -2103,6 +2200,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &1513414259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 36d5e239ddf1c5843979b26c82f9ad52, type: 3}
+  m_PrefabInstance: {fileID: 1586329849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1532846003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,6 +2503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 3.2
   Gravity: -9.8
+  ItemToDrop: {fileID: 3643614115530008759, guid: 3807e8fc583490c46a94f4ba23a1f2f2, type: 3}
   IsPlayer: 0
   CurrentState: 0
   AttackSlideDuration: 0.35
@@ -2419,7 +2522,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 3.19
+  m_StoppingDistance: 2.8
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -2479,6 +2582,7 @@ Transform:
   m_Children:
   - {fileID: 1238034382}
   - {fileID: 273970114}
+  - {fileID: 876452404}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

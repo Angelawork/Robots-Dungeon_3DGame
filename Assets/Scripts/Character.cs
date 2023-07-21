@@ -25,10 +25,11 @@ public class Character : MonoBehaviour
     private Transform TargetPlayer;
 
     //State machine
-    public enum CharacterState{
+    public enum CharacterState{//everytime a new state is added, we need to update fixedUpdate() and SwitchStateTo()
         Normal, 
         Attacking,
-        Dead
+        Dead,
+        BeingHit
     }
     public CharacterState CurrentState;
     private float attackStartTime; //player slide while attack
@@ -109,7 +110,7 @@ public class Character : MonoBehaviour
             case CharacterState.Attacking:
 
                 if(IsPlayer){
-                    _movementVelocity = Vector3.zero;
+                    
                     if(Time.time < attackStartTime + AttackSlideDuration){
                         float timePassed = Time.time - attackStartTime;
                         float lerpTime = timePassed / AttackSlideDuration;
@@ -118,6 +119,8 @@ public class Character : MonoBehaviour
                 }
                 break;
             case CharacterState.Dead:
+                return;
+            case CharacterState.BeingHit:
                 return;
         }
 
@@ -132,6 +135,7 @@ public class Character : MonoBehaviour
             _movementVelocity += _verticalVelocity * Vector3.up * Time.deltaTime;
 
             _cc.Move(_movementVelocity);
+            _movementVelocity = Vector3.zero;
         }
     }
 
@@ -153,6 +157,8 @@ public class Character : MonoBehaviour
                 break;
             case CharacterState.Dead:
                 return;
+            case CharacterState.BeingHit:
+                break;
         }
 
         //entering new state
@@ -176,12 +182,19 @@ public class Character : MonoBehaviour
                 _animator.SetTrigger("Dead");
                 StartCoroutine(MaterialDissolve());
                 break;
+            case CharacterState.BeingHit:
+                _animator.SetTrigger("BeingHit");
+                break;
         }
 
         CurrentState = newState;
     }
 
     public void AttackAnimationEnds(){
+        SwitchStateTo(CharacterState.Normal);
+    }
+
+    public void BeingHitAnimationEnds(){
         SwitchStateTo(CharacterState.Normal);
     }
 
@@ -195,6 +208,10 @@ public class Character : MonoBehaviour
         }
 
         StartCoroutine(MaterialBlink());
+
+        if(IsPlayer){
+            SwitchStateTo(CharacterState.BeingHit);
+        }
     }
 
     public void EnableDamageCaster(){
@@ -205,7 +222,7 @@ public class Character : MonoBehaviour
     }
 
     IEnumerator MaterialBlink(){
-        _materialPropertyBlock.SetFloat("_blink", 0.28f);
+        _materialPropertyBlock.SetFloat("_blink", 0.35f);
         _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
 
         yield return new WaitForSeconds(0.2f);
