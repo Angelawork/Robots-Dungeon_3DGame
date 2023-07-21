@@ -156,11 +156,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _blink: 0
-    - _dissolve_height: 300
+    - _dissolve_height: 30
     - _enableDissolve: 0
     m_Colors:
-    - Blink_Color: {r: 1, g: 1, b: 1, a: 1}
-    - DissolveEdgeColor: {r: 29.85706, g: 0, b: 0, a: 0}
+    - Blink_Color: {r: 0.8301887, g: 0.19110003, b: 0.3590856, a: 1}
+    - DissolveEdgeColor: {r: 30.080917, g: 6.9213495, b: 2.6675515, a: 0.8392157}
     - Edge_Color: {r: 29.85706, g: 0, b: 0, a: 0}
     - Emssion_Color: {r: 3.9533494, g: 0.12418899, b: 0, a: 1}
     - Fresnel_Color: {r: 1, g: 0.0312974, b: 0, a: 0}

@@ -240,6 +240,12 @@ public class Character : MonoBehaviour
         CurrentState = newState;
     }
 
+    public void RotateToTarget(){
+        if(CurrentState != CharacterState.Dead){
+            transform.LookAt(TargetPlayer, Vector3.up);
+        }
+    }
+
     public void AttackAnimationEnds(){
         SwitchStateTo(CharacterState.Normal);
     }
