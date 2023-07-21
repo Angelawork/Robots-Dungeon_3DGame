@@ -13,7 +13,10 @@ public class Character : MonoBehaviour
     private Animator _animator;
 
     //health
-    private Health _health; 
+    private Health _health;
+
+    //damage caster
+    private DamageCaster _damageCaster;
 
     //Enemy
     public bool IsPlayer = true;
@@ -34,6 +37,7 @@ public class Character : MonoBehaviour
         _cc = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
+        _damageCaster = GetComponentInChildren<DamageCaster>();
 
         if(!IsPlayer){
             _navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -129,6 +133,10 @@ public class Character : MonoBehaviour
             case CharacterState.Normal:
                 break;
             case CharacterState.Attacking:
+
+                if(_damageCaster!=null){
+                    DisableDamageCaster();
+                }
                 break;
         }
 
@@ -161,5 +169,16 @@ public class Character : MonoBehaviour
         if(_health!=null){
             _health.ApplyDamage(Damage);
         }
+
+        if(!IsPlayer){
+            GetComponent<EnemyVFXManager>().PlayBeingHitVFX(attackPos);
+        }
+    }
+
+    public void EnableDamageCaster(){
+        _damageCaster.EnableDamageCaster();
+    }
+    public void DisableDamageCaster(){
+        _damageCaster.DisableDamageCaster();
     }
 }
