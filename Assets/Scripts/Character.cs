@@ -152,7 +152,7 @@ public class Character : MonoBehaviour
                             _playerinput.MouseButtonDown = false;
                             SwitchStateTo(CharacterState.Attacking);
 
-                            CalculatePlayerMovement();
+                            //CalculatePlayerMovement();
                         }
                     }
                 }
@@ -243,6 +243,8 @@ public class Character : MonoBehaviour
 
                 if(IsPlayer){
                     attackStartTime = Time.time;
+
+                    RotateToCursor();
                 }
                 break;
             case CharacterState.Dead:
@@ -422,5 +424,17 @@ public class Character : MonoBehaviour
 
         _materialPropertyBlock.SetFloat("_enableDissolve", 0f);
         _skinnedMeshRenderer.SetPropertyBlock(_materialPropertyBlock);
+    }
+
+
+    //finetune
+    private void RotateToCursor(){
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit HitResult;
+
+        if(Physics.Raycast(ray, out HitResult, 1000, 1<< LayerMask.NameToLayer("CursorTest"))){
+            Vector3 cursorPos = HitResult.point;
+            transform.rotation = Quaternion.LookRotation(cursorPos - transform.position, Vector3.up);
+        }
     }
 }
