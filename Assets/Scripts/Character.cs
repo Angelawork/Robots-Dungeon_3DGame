@@ -160,10 +160,7 @@ public class Character : MonoBehaviour
             case CharacterState.Dead:
                 return;
             case CharacterState.BeingHit:
-                if(ImpactOnCharacter.magnitude > 0.2f){
-                    _movementVelocity = ImpactOnCharacter*Time.deltaTime;
-                }
-                ImpactOnCharacter = Vector3.Lerp(ImpactOnCharacter, Vector3.zero, Time.deltaTime*5);
+                
                 break;
 
             case CharacterState.Slide:
@@ -178,6 +175,10 @@ public class Character : MonoBehaviour
                 break;
         }
 
+        if(ImpactOnCharacter.magnitude > 0.2f){
+            _movementVelocity = ImpactOnCharacter*Time.deltaTime;
+        }
+        ImpactOnCharacter = Vector3.Lerp(ImpactOnCharacter, Vector3.zero, Time.deltaTime*5);
 
         
         if(IsPlayer){
@@ -190,6 +191,11 @@ public class Character : MonoBehaviour
 
             _cc.Move(_movementVelocity);
             _movementVelocity = Vector3.zero;
+        }else{
+            if(CurrentState!=CharacterState.Normal){
+                _cc.Move(_movementVelocity);
+                _movementVelocity = Vector3.zero;//enemy is pushed back when hit
+            }
         }
     }
 
@@ -248,6 +254,11 @@ public class Character : MonoBehaviour
                 if (childTransform != null)
                 {
                     Destroy(childTransform.gameObject);
+                }
+
+                if(!IsPlayer){
+                    SkinnedMeshRenderer mesh = GetComponentInChildren<SkinnedMeshRenderer>();
+                    mesh.gameObject.layer=0;
                 }
                 
                 break;
@@ -309,6 +320,8 @@ public class Character : MonoBehaviour
         if(IsPlayer){
             SwitchStateTo(CharacterState.BeingHit);
             CalculateImpact(attackerPos, 8f);
+        }else{
+            CalculateImpact(attackerPos, 6f);
         }
     }
     IEnumerator DelayCancelInvincible(){

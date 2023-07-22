@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private Character playerCharacter;
+    public GameUI_Manager gameUI_Manager;
+    public Character playerCharacter;
     private bool gameOver;
     private void Awake() {
         playerCharacter = GameObject.FindWithTag("Player").GetComponent<Character>();
     }
     private void GameOver(){
-        Debug.Log("gameover");
+        gameUI_Manager.show_GameOver();
     }
-    private void GameFinished(){
-        Debug.Log("gamefin");
+    public void GameFinished(){
+        gameUI_Manager.show_GameFinished();
     }
     void Update()
     {
@@ -24,5 +26,18 @@ public class GameManager : MonoBehaviour
             gameOver = true;
             GameOver();
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            gameUI_Manager.TogglePauseUI();
+        }
+    }
+
+    public void return_MainMenu(){
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Restart(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
