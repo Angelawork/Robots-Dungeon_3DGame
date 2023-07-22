@@ -18,6 +18,7 @@ public class PickUp : MonoBehaviour
             if(collectedVFX!=null){
                 Instantiate(collectedVFX, transform.position,Quaternion.identity);
             }
+
             Destroy(gameObject);
         }
     }

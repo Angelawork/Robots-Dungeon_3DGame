@@ -61,11 +61,35 @@ public class Character : MonoBehaviour
     private SkinnedMeshRenderer _skinnedMeshRenderer;
 
 
+    //Audio manager
+    private AudioSource _AudioSource;
+    public AudioClip[] _stepSounds;
+    public AudioClip[] AttackSounds;
+    public AudioClip[] SlideSounds;
+    private bool isPlayingFootstep;
+    public float footstepRate = 0.1f;
+    private float nextFootstepTime;
+    private void Footsteps(){
+        if (_stepSounds.Length > 0)
+        {
+            int number = Random.Range(0, _stepSounds.Length);
+            _AudioSource.PlayOneShot(_stepSounds[number]);
+            isPlayingFootstep = true;
+            Invoke("ResetFootstepStatus", _stepSounds[number].length);
+        }
+    }
+    private void ResetFootstepStatus()
+    {
+        isPlayingFootstep = false;
+    }
+
+
     private void Awake() {
         _cc = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _damageCaster = GetComponentInChildren<DamageCaster>();
+        _AudioSource = GetComponent<AudioSource>();
 
         _skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         _materialPropertyBlock = new MaterialPropertyBlock();
@@ -97,6 +121,7 @@ public class Character : MonoBehaviour
         //for camera perspective
         //_movementVelocity = Quaternion.Euler(0,-45f,0) * _movementVelocity;
 
+        //run or walk
         if(Input.GetKey(KeyCode.LeftShift)){
             _animator.SetFloat("Speed",_movementVelocity.magnitude*5);
             _movementVelocity *= MoveSpeed * Time.deltaTime * 1.5f;
@@ -104,6 +129,7 @@ public class Character : MonoBehaviour
             _animator.SetFloat("Speed",_movementVelocity.magnitude);
             _movementVelocity *= MoveSpeed * Time.deltaTime;
         }
+        //run or walk
 
         if(_movementVelocity != Vector3.zero){
             transform.rotation = Quaternion.LookRotation(_movementVelocity);
@@ -124,6 +150,7 @@ public class Character : MonoBehaviour
 
     }
 
+
     private void FixedUpdate() {
         switch(CurrentState){
             case CharacterState.Normal:
@@ -132,9 +159,22 @@ public class Character : MonoBehaviour
                 }
                 else
                     CalculateEnemyMovement();
+
+                
+                //audio
+                if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)){
+                    //controller is grounded and moving but we are not playing footsteps
+                    if (Time.time >= nextFootstepTime && _cc.isGrounded && !isPlayingFootstep &&_movementVelocity.magnitude!=0)
+                    {
+                        Footsteps();
+                        nextFootstepTime = Time.time + footstepRate;
+                    }
+                }
+            
                 break;
 
             case CharacterState.Attacking:
+
 
                 if(IsPlayer){
                     
@@ -154,6 +194,7 @@ public class Character : MonoBehaviour
 
                             //CalculatePlayerMovement();
                         }
+                
                     }
                 }
                 break;
@@ -199,6 +240,12 @@ public class Character : MonoBehaviour
         }
     }
 
+    private IEnumerator PlayAudioWithDelay(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        int number = Random.Range(0, AttackSounds.Length);
+        _AudioSource.PlayOneShot(AttackSounds[number]);
+    }
     public void SwitchStateTo(CharacterState newState){
         if(IsPlayer){
             _playerinput.clearCache();
@@ -246,6 +293,14 @@ public class Character : MonoBehaviour
 
                     RotateToCursor();
                 }
+
+                if(AttackSounds.Length>0){
+                    if(!IsPlayer){
+                        StartCoroutine(PlayAudioWithDelay(1.5f));
+                    }else{
+                        _AudioSource.PlayOneShot(AttackSounds[Random.Range(0, AttackSounds.Length)]);
+                    }
+                }
                 break;
             case CharacterState.Dead:
                 _cc.enabled = false;
@@ -273,6 +328,7 @@ public class Character : MonoBehaviour
                 }
                 break;
             case CharacterState.Slide:
+                _AudioSource.PlayOneShot(SlideSounds[Random.Range(0, SlideSounds.Length)]);
                 _animator.SetTrigger("Slide");
                 break;
             case CharacterState.Spawn:
@@ -384,12 +440,18 @@ public class Character : MonoBehaviour
             Instantiate(ItemToDrop,transform.position, Quaternion.identity);
         }
     }
+public AudioClip[] CoinSounds;
+public AudioClip[] HealSounds;
     public void PickUpItem(PickUp item){
         switch(item.type){
             case PickUp.PickUpType.Heal:
+                _AudioSource.PlayOneShot(HealSounds[0]);
                 AddHealth(item.Value);
                 break;
+
             case PickUp.PickUpType.Coin:
+                int number = Random.Range(0, CoinSounds.Length);
+                _AudioSource.PlayOneShot(CoinSounds[number]);
                 AddCoin(item.Value);
                 break;
         }
