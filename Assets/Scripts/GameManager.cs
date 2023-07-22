@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public void GameFinished(){
         gameUI_Manager.show_GameFinished();
     }
+    public void GameLevelUp(){
+        gameUI_Manager.show_GameLevelUp();
+    }
     void Update()
     {
         if(gameOver)

@@ -13,11 +13,11 @@ public class GameUI_Manager : MonoBehaviour
     public GameObject UI_GameOver;
     public GameObject UI_GameFinished;
 
-    private enum GameUI_State{
-        GamePlay,Pause,GameOver,GameFinished
+    public enum GameUI_State{
+        GamePlay,Pause,GameOver,GameFinished,GameLevelUp
     }
 
-    GameUI_State currentState;
+    public GameUI_State currentState;
 
     private void Start() {
         SwitchUIState(GameUI_State.GamePlay);
@@ -29,6 +29,11 @@ public class GameUI_Manager : MonoBehaviour
         CoinText.text = GM.playerCharacter.Coin.ToString();
     }
 
+    private IEnumerator DelayedPause(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Time.timeScale = 0;
+    }
     private void SwitchUIState(GameUI_State state){
         UI_GameFinished.SetActive(false);
         UI_GameOver.SetActive(false);
@@ -43,10 +48,14 @@ public class GameUI_Manager : MonoBehaviour
                 UI_Pause.SetActive(true);
                 break;
             case GameUI_State.GameOver:
+                StartCoroutine(DelayedPause(2.5f));
+                
                 UI_GameOver.SetActive(true);
                 break;
             case GameUI_State.GameFinished:
                 UI_GameFinished.SetActive(true);
+                break;
+            case GameUI_State.GameLevelUp:
                 break;
         }
 
@@ -74,5 +83,8 @@ public class GameUI_Manager : MonoBehaviour
 
     public void show_GameFinished(){
         SwitchUIState(GameUI_State.GameFinished);
+    }
+    public void show_GameLevelUp(){
+        SwitchUIState(GameUI_State.GameLevelUp);
     }
 }

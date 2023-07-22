@@ -1,0 +1,338 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.14f1 (eee1884e7226) revision 15655304'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 16068 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/qingc/OneDrive - McGill University/Unity/My project/Robot's Dungeon
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+53866
+Successfully changed project path to: C:/Users/qingc/OneDrive - McGill University/Unity/My project/Robot's Dungeon
+C:/Users/qingc/OneDrive - McGill University/Unity/My project/Robot's Dungeon
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 644.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.14f1 (eee1884e7226)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/qingc/OneDrive - McGill University/Unity/My project/Robot's Dungeon/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a8)
+    Vendor:   Intel
+    VRAM:     8034 MB
+    Driver:   31.0.101.4255
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.039999 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 729.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.405 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3406ms)
+		BeginReloadAssembly (271ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2609ms)
+			LoadAssemblies (267ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (477ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (124ms)
+			SetupLoadedEditorAssemblies (1776ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (267ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (730ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (563ms)
+				ProcessInitializeOnLoadMethodAttributes (209ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.031630 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\qingc\OneDrive - McGill University\Unity\My project\Robot's Dungeon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 357.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.449 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4453ms)
+		BeginReloadAssembly (433ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (3675ms)
+			LoadAssemblies (373ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (940ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (279ms)
+			SetupLoadedEditorAssemblies (1994ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (358ms)
+				BeforeProcessingInitializeOnLoad (392ms)
+				ProcessInitializeOnLoadAttributes (914ms)
+				ProcessInitializeOnLoadMethodAttributes (254ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5937 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.6 MB). Loaded Objects now: 6396.
+Memory consumption went from 243.0 MB to 241.4 MB.
+Total: 11.629300 ms (FindLiveObjects: 0.969200 ms CreateObjectMapping: 0.559100 ms MarkObjects: 8.774700 ms  DeleteObjects: 1.322200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 441681.416889 seconds.
+  path: Assets/Prefabs/Enemy_01.prefab
+  artifactKey: Guid(28c15b7768cdc71418ab96fd20007d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy_01.prefab using Guid(28c15b7768cdc71418ab96fd20007d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7d47f9518ff586ace5eb21696dd592') in 1.022212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 145.800672 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Base_Color.png
+  artifactKey: Guid(bc11ca715ab741a4d9f43f93aa2d6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Base_Color.png using Guid(bc11ca715ab741a4d9f43f93aa2d6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c1fca81d11349f123471780f77d7aa') in 0.306366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.262492 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Mid_low.png
+  artifactKey: Guid(66975c3ee81ad424d8f989546fcef21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Mid_low.png using Guid(66975c3ee81ad424d8f989546fcef21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ef342039ad1e53375a2f7d865514fa') in 0.072187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x3.5_low_AO.png
+  artifactKey: Guid(3efad1dcd25f4f640ad6e3db8148732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x3.5_low_AO.png using Guid(3efad1dcd25f4f640ad6e3db8148732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb31503bd63202b4511166283b681d92') in 0.080101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Mid_low_N.png
+  artifactKey: Guid(8c21b225fc973ec4b98c7e1348dcb84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Mid_low_N.png using Guid(8c21b225fc973ec4b98c7e1348dcb84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe17d669e52f165097c3296b6a13b0a8') in 0.080840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_2x0.6x1.5_low_AO.png
+  artifactKey: Guid(9cadfb515eb5a494eb9b8265d224a913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_2x0.6x1.5_low_AO.png using Guid(9cadfb515eb5a494eb9b8265d224a913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e575b5dacbb8ef376f5f7a14dea3cf9a') in 0.101092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_35_low.png
+  artifactKey: Guid(e92e9204036cd494389c0ff2fe539104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_35_low.png using Guid(e92e9204036cd494389c0ff2fe539104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1202f8863a30a5c3d4c2f276c862055') in 0.079983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x1.5_Normal.png
+  artifactKey: Guid(de93655693f0f5c4a84b460c0becd766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x1.5_Normal.png using Guid(de93655693f0f5c4a84b460c0becd766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f27efd73fd915a97f25778a8708572') in 0.100345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_short_N.png
+  artifactKey: Guid(62d6f094a03106a41a4fbe087c743299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_short_N.png using Guid(62d6f094a03106a41a4fbe087c743299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfca3aaff8737c77136db355e72c72b') in 0.084914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Leaves.png
+  artifactKey: Guid(4d9d7fb8ba37584439c8b14e2be3edd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Leaves.png using Guid(4d9d7fb8ba37584439c8b14e2be3edd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3990ebb3fffef185f8e026aa6c8ab5') in 0.073811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_2_low.png
+  artifactKey: Guid(f7e518b957e81714caf20765f8983a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_2_low.png using Guid(f7e518b957e81714caf20765f8983a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bc66c339db6404a85b3aaba1e10fdc') in 0.090813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_02.png
+  artifactKey: Guid(e0b95f52995b2324a8b99f9053fd3cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_02.png using Guid(e0b95f52995b2324a8b99f9053fd3cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200a933c3160b59bfdc9ec385bd4db0e') in 0.080689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_low.png
+  artifactKey: Guid(10cb23238bf00c2499c0bfbae2bddd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_low.png using Guid(10cb23238bf00c2499c0bfbae2bddd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2c43448333105712ec1975fd32e7bd') in 0.105593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_low_N.png
+  artifactKey: Guid(02b1d4460c92cd04f9b94261a42eb70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_low_N.png using Guid(02b1d4460c92cd04f9b94261a42eb70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37349ba8abc75ade95074afaf429fdb') in 0.101890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_short_side_AO.png
+  artifactKey: Guid(279805735ab17ce47b9a5fe8b17868d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_short_side_AO.png using Guid(279805735ab17ce47b9a5fe8b17868d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87756499691d66c11fcbbd7cb1ade747') in 0.085759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_high_side_AO.png
+  artifactKey: Guid(3f30c0c5ba0acf742a03b23c6c1d2eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Stairs_high_side_AO.png using Guid(3f30c0c5ba0acf742a03b23c6c1d2eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d889dfb623bc9912cced5fe7d36fc23') in 0.103765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_2_low_AO.png
+  artifactKey: Guid(3fc5bc1109b918a4598e47926185fd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_25_2_low_AO.png using Guid(3fc5bc1109b918a4598e47926185fd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f874223e1ff31b3dbb6fafab22e93b38') in 0.095170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_01.png
+  artifactKey: Guid(c04034839a6f1bf42adadc49766a55b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_01.png using Guid(c04034839a6f1bf42adadc49766a55b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e556c0678f14931e127be9fec5ed83b8') in 0.094660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Side_low_N.png
+  artifactKey: Guid(7fe71198e55703b4ba6b98215b480b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Side_low_N.png using Guid(7fe71198e55703b4ba6b98215b480b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f361db08b823c82023c387ac7a43493') in 0.096129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_03.png
+  artifactKey: Guid(b19bbde773abf264690fa087662055ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_03.png using Guid(b19bbde773abf264690fa087662055ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30870481d1225f3e0a6d261f9deea1bf') in 0.102619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_35_low_AO.png
+  artifactKey: Guid(c0688390cc663bf4aaf4945175c7293a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/pillar_35_low_AO.png using Guid(c0688390cc663bf4aaf4945175c7293a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8496ef22fee7b3335175a7c2ee447f2') in 0.099082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_01.png
+  artifactKey: Guid(b30d3164c5b34b6468016ccb3a13fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_01.png using Guid(b30d3164c5b34b6468016ccb3a13fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6decbffbe5ef29d1049d4c065abe96') in 0.105366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Side_low.png
+  artifactKey: Guid(94f180a080010ab43bac617fa41c70d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Arc_Side_low.png using Guid(94f180a080010ab43bac617fa41c70d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf687a46ad855cfb8a6065811357e4f') in 0.071749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rocks_Normal.png
+  artifactKey: Guid(17687c8eb05682d47aa037728edf2a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rocks_Normal.png using Guid(17687c8eb05682d47aa037728edf2a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea622065b005ec1f3b9a14ff167f66b2') in 0.097264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/DefaultMaterial_Normal_OpenGL.png
+  artifactKey: Guid(676383e9ec3f77c4398106f3c6e3283d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/DefaultMaterial_Normal_OpenGL.png using Guid(676383e9ec3f77c4398106f3c6e3283d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7812b9b64ba30ca8a53be5bdabfccf71') in 0.063717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/StairHandle_N.png
+  artifactKey: Guid(94d667e46e2943d4f9091454391843b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/StairHandle_N.png using Guid(94d667e46e2943d4f9091454391843b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88bc321609db2a6fcd90f4daece9499f') in 0.099964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x1.5_Color.png
+  artifactKey: Guid(9236bfac25812c94fac303ab1900b853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Wall_4x0.6x1.5_Color.png using Guid(9236bfac25812c94fac303ab1900b853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a12f9b088d6c8ea39c5c9dfd3a05f44') in 0.109612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_01_N.png
+  artifactKey: Guid(c68d0068ffb6d2b4c80d9a0a87d0e5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectLittleAdventurer/Mesh Asset/Environment/Texture/Rock_small_01_N.png using Guid(c68d0068ffb6d2b4c80d9a0a87d0e5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecea26926ea5032c8f48ff72f2b57e24') in 0.152555 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

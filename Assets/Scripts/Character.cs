@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public float cameraAngle = -45f;
     private CharacterController _cc;
     public float MoveSpeed = 6f;
     private Vector3 _movementVelocity;
@@ -66,6 +67,7 @@ public class Character : MonoBehaviour
     public AudioClip[] _stepSounds;
     public AudioClip[] AttackSounds;
     public AudioClip[] SlideSounds;
+    public AudioClip[] DeathSounds;
     private bool isPlayingFootstep;
     public float footstepRate = 0.1f;
     private float nextFootstepTime;
@@ -119,7 +121,7 @@ public class Character : MonoBehaviour
         _movementVelocity.Normalize();
 
         //for camera perspective
-        //_movementVelocity = Quaternion.Euler(0,-45f,0) * _movementVelocity;
+        _movementVelocity = Quaternion.Euler(0,cameraAngle,0) * _movementVelocity;
 
         //run or walk
         if(Input.GetKey(KeyCode.LeftShift)){
@@ -316,6 +318,10 @@ public class Character : MonoBehaviour
                 if(!IsPlayer){
                     SkinnedMeshRenderer mesh = GetComponentInChildren<SkinnedMeshRenderer>();
                     mesh.gameObject.layer=0;
+                }
+
+                if(IsPlayer){
+                    _AudioSource.PlayOneShot(DeathSounds[Random.Range(0, DeathSounds.Length)]);
                 }
                 
                 break;

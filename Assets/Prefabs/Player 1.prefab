@@ -134,6 +134,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fba95cafa5bba8649a7d269656e7317b, type: 3}
   - {fileID: 8300000, guid: e924ff5d774024542830602ee674d9a9, type: 3}
   - {fileID: 8300000, guid: 281c105661e5ee14b8e76523200338bd, type: 3}
+  DeathSounds:
+  - {fileID: 8300000, guid: 8c797f991d78a4b4389a6a2026e7a8c3, type: 3}
+  - {fileID: 8300000, guid: db61dd56a68dfa343a168b455155b7e8, type: 3}
   footstepRate: 0.5
   CoinSounds:
   - {fileID: 8300000, guid: 4a967216cc0332840a3cd98795a74552, type: 3}
