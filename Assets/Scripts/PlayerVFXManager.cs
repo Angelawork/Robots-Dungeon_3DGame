@@ -31,12 +31,15 @@ public class PlayerVFXManager : MonoBehaviour
 
     public void PlayBlade01(){
         Blade01.Play();
+        CameraShake.Instance.ShakeCamera();
     }
     public void PlayBlade02(){
         Blade02.Play();
+        CameraShake.Instance.ShakeCamera();
     }
     public void PlayBlade03(){
         Blade03.Play();
+        CameraShake.Instance.ShakeCamera();
     }
 
     public void StopBlade(){

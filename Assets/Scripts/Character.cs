@@ -180,6 +180,7 @@ public class Character : MonoBehaviour
 
                 if(IsPlayer){
                     
+                    
                     if(Time.time < attackStartTime + AttackSlideDuration){
                         float timePassed = Time.time - attackStartTime;
                         float lerpTime = timePassed / AttackSlideDuration;
@@ -194,7 +195,7 @@ public class Character : MonoBehaviour
                             _playerinput.MouseButtonDown = false;
                             SwitchStateTo(CharacterState.Attacking);
 
-                            //CalculatePlayerMovement();
+                            CalculatePlayerMovement();
                         }
                 
                     }
@@ -293,7 +294,7 @@ public class Character : MonoBehaviour
                 if(IsPlayer){
                     attackStartTime = Time.time;
 
-                    RotateToCursor();
+                    //RotateToCursor();
                 }
 
                 if(AttackSounds.Length>0){
