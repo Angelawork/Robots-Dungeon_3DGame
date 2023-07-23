@@ -13,7 +13,7 @@ public class Teleport : MonoBehaviour
         if (other.CompareTag("Player") && UIgm.currentState == GameUI_Manager.GameUI_State.GameLevelUp)
         {
             teleport.Play();
-            StartCoroutine(Delayed(1f));
+            StartCoroutine(Delayed(0.7f));
             
         }
     }

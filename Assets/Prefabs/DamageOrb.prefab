@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.4
-  Damage: 10
+  Damage: 25
   HitVFX: {fileID: 1143478937373928302, guid: 5671c05ffd1f95c458d8ab9a7554936e, type: 3}
 --- !u!1001 &5800690036401944199
 PrefabInstance:

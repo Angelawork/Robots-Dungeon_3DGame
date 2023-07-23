@@ -53,6 +53,7 @@ public class GameUI_Manager : MonoBehaviour
                 UI_GameOver.SetActive(true);
                 break;
             case GameUI_State.GameFinished:
+                StartCoroutine(DelayedPause(2.5f));
                 UI_GameFinished.SetActive(true);
                 break;
             case GameUI_State.GameLevelUp:

@@ -8,7 +8,7 @@ public class CameraShake : MonoBehaviour
     public static CameraShake Instance {get;private set;}
 
     private CinemachineVirtualCamera camera;
-    private float ShakeIntensity = 1f;
+    private float ShakeIntensity = 1.3f;
     private float Startintensity;
     private float ShakeTime = 0.2f;
     private float shaketimerTotal;

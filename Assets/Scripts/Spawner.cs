@@ -21,9 +21,10 @@ public class Spawner : MonoBehaviour
 
         bool allSpawnedDead = true;
         foreach(Character c in spawnedCharacter){
-            if(c.CurrentState!=Character.CharacterState.Dead)
+            if(c.CurrentState!=Character.CharacterState.Dead){
                 allSpawnedDead = false;
                 break;
+            }
         }
 
         if(allSpawnedDead){
