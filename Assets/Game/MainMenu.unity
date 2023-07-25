@@ -155,6 +155,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3744321355240137331, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555366552935600190, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555366553509457778, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891276209062859771, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891276209083487927, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4891276209432459168, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -202,6 +222,22 @@ PrefabInstance:
     - target: {fileID: 4891276209432459183, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
       propertyPath: m_Name
       value: MainGame Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891276209614298543, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891276210446049037, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891276210695804797, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541573733250393500, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7afccb46afae0ec4d82e772dd5035a64, type: 3}
@@ -1166,6 +1202,10 @@ PrefabInstance:
     - target: {fileID: 1676038871238565895, guid: 74ea45f96d67b854391e0797ac0ecb1d, type: 3}
       propertyPath: m_Name
       value: MainMenu Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676038871238565895, guid: 74ea45f96d67b854391e0797ac0ecb1d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1676038871238565915, guid: 74ea45f96d67b854391e0797ac0ecb1d, type: 3}
       propertyPath: m_Pivot.x
