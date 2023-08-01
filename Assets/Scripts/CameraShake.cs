@@ -10,7 +10,7 @@ public class CameraShake : MonoBehaviour
     private CinemachineVirtualCamera camera;
     private float ShakeIntensity = 1.3f;
     private float Startintensity;
-    private float ShakeTime = 0.2f;
+    private float ShakeTime = 0.3f;
     private float shaketimerTotal;
     private float Timer;
     private CinemachineBasicMultiChannelPerlin _cbmcp;

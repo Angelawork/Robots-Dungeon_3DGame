@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb753d968f34db49b9ba05a15f21511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraAngle: -45
   MoveSpeed: 3.2
   Gravity: -9.8
   ItemToDrop: {fileID: 3643614115530008759, guid: 3807e8fc583490c46a94f4ba23a1f2f2, type: 3}
@@ -163,6 +164,8 @@ MonoBehaviour:
   _stepSounds: []
   AttackSounds:
   - {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+  SlideSounds: []
+  DeathSounds: []
   footstepRate: 0.1
   CoinSounds: []
   HealSounds: []
@@ -330,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5437820340165497946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 1.14, z: 1.652}
+  m_LocalPosition: {x: -0.31, y: 1.14, z: 1.748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
